@@ -22,17 +22,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Ekran startowy KDE "Naoliwiacz PLD".
 
 %prep
-%setup  -q -n ac-oiler
+%setup -q -n ac-oiler
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
-install -d \
-	$RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/%{_splash}
-
+install -d $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/%{_splash}
 install * $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/%{_splash}
-
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
