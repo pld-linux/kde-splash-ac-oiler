@@ -5,11 +5,12 @@ Summary:	KDE splash screen
 Summary(pl):	Ekran startowy KDE
 Name:		kde-splash-%{_splash}
 Version:	0.2
-Release:	0.9
+Release:	1
 License:	GPL v2
 Group:		X11/Amusements
 Source0:	%{_splash}-%{version}.tar.bz2
 # Source0-md5:	06fcded5d94faa5193ed29e93dcf54d4
+Provides:	kde-splash
 Requires:	kdebase-desktop
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
