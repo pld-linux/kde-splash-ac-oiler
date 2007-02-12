@@ -2,7 +2,7 @@
 %define		_splash		ac-oiler
 
 Summary:	KDE splash screen
-Summary(pl):	Ekran startowy KDE
+Summary(pl.UTF-8):   Ekran startowy KDE
 Name:		kde-splash-%{_splash}
 Version:	0.2
 Release:	1
@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 "PLD AC Oiler" KDE splash screen.
 
-%description -l pl
+%description -l pl.UTF-8
 Ekran startowy KDE "Naoliwiacz PLD".
 
 %prep
